@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.celsisu-fahrenheit {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+}
+
+.celsius,
+.fahrenheit {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+
+.celsius p,
+.fahrenheit p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.celsius label,
+.fahrenheit label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.celsisu-fahrenheit input {
+  display: block;
+  padding: 8px;
+  width: 300px;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.celsisu-fahrenheit input::placeholder {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin-top: 12px;
+}
+
+.btn-c,
+.btn-f {
+  border: none;
+  background-color: #F51B01;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+  transform: scale(1);
+  transition: 0.3s ;
+}
+
+.btn-c:hover,
+.btn-f:hover {
+  background-color: #F52D00;
+  transform: scale(1.1);
+}
+
+.container-resultado,
+.container-resultado-1 {
+  display: grid;
+  justify-items: end;
+  position: absolute;
+  left: 380px;
+  bottom: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
